@@ -1,0 +1,223 @@
+/* General Styles */
+.about-us {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 34px 20px;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px; /* Keep a maximum width for larger screens */
+    margin: 0 auto; /* Center-align the container */
+}
+
+.about-header {
+    text-align: center;
+}
+
+.about-heading {
+    text-align: center; 
+    font-size: 36px;
+    font-weight: bold;
+    color: #228d22;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.about-subheading {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center; /* Align the subheading as left */
+}
+
+.highlight {
+    color: #228d22;
+    font-weight: bold;
+}
+
+/* Row Layout */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.about-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+/* Card Styles */
+.about-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-icon {
+    color: #228d22;
+}
+
+.card-heading {
+    font-size: 26px;
+    color: #228d22;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.8;
+    animation: fadeInUp 1s ease-in-out;
+    margin-left: 2%;
+    text-align: left; /* Align the paragraph text inside the card */
+}
+
+.card-text ul {
+    text-align: left;
+    margin: 10px 0;
+    padding: 0 20px;
+    list-style: disc;
+}
+
+/* CTA Button */
+.cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cta-button {
+    background-color: #228d22;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #1a701a;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile View Styles */
+@media (max-width: 768px) {
+    /* Adjustments for about section */
+    .about-us {
+        padding: 20px;
+        width: 100%; /* Reduce the width of the container on mobile */
+        max-width: 600px; /* Set a max-width for smaller containers */
+        margin: 0 auto; /* Center the container */
+    }
+
+    .about-heading {
+        font-size: 30px;
+    }
+
+    .about-subheading {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .about-content {
+        gap: 20px; /* Adjust gap between content */
+    }
+
+    /* Adjust card layout */
+    .about-card {
+        width: 100%; /* Make cards take more space on mobile */
+        padding: 20px;
+    }
+
+    .card-heading {
+        font-size: 22px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+
+    /* Align cards vertically */
+    .about-row {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    /* Align header and subheading to center */
+    .about-header {
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile View for smaller devices */
+@media (max-width: 480px) {
+    .about-heading {
+        font-size: 24px;
+    }
+
+    .about-subheading {
+        font-size: 14px;
+    }
+
+    .about-card {
+        width: 100%; /* Cards take full width on very small screens */
+        padding: 15px;
+    }
+
+    .card-heading {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    .about-row {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,122 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Contact Page Layout */
+  .contact-container {
+    display: flex;
+    min-height: 100vh;
+    font-size: 1rem;
+  }
+  
+  /* Left Section */
+  .contact-left {
+    background: url('https://images.pexels.com/photos/5993062/pexels-photo-5993062.jpeg?auto=compress&cs=tinysrgb&w=600')
+      no-repeat center center;
+    background-size: auto;
+
+    /* background-color: rgb(16, 16, 16,1); */
+    width: 50%;
+    padding: 2rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 10%;
+  }
+  
+  .contact-section {
+    margin-bottom: 2rem;
+  }
+  
+  .contact-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #228d22;
+    margin-bottom: 0.5rem;
+    /* background-color: #ffffff; */
+    font-family: "League Spartan", sans-serif;
+  }
+  
+  .contact-title .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.8rem;
+  }
+  
+  .contact-info {
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+  
+  /* Right Section */
+  .contact-right {
+    background-color: #f0f8f5;
+    width: 50%;
+    padding: 4rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 10%;
+    font-family: "League Spartan", sans-serif;
+  }
+  
+  .form-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 1.5rem;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    outline: none;
+    border: 2px solid #228d22;
+  }
+  
+  .form-textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .send-button {
+    padding: 0.8rem;
+    background-color: #228d22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .send-button:hover {
+    background-color: #1b6e1a;
+  }
+  
